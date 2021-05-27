@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color:black;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  background-color:black;
+  flex-direction: row-reverse;
+}
+.app__dropdown {
+  background-color: white;
+  border-radius: 10px;
+}
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.app__header > h1 {
+  color:crimson;
+  font-size: 1.2rem;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+.app__right{
+  margin-top: 10px;
+}
+.app_mid{
+  display: flex;
+  justify-content: space-between;
+}
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+.button{
+  font-size: medium;
+  color:white;
+  font:20px;
+  background-color: rgba(102, 255, 0, 0.486);
+  border-radius: 5px;
+  width: 20rem;
+  height:2rem;
+  margin: 10px auto;
+  justify-content: center;
+  cursor: pointer;
+}
+.button:hover{
+  color:crimson;
+  background-color: darkgrey;
+  font:24px;
+}
+.hospital_list{
+  height:200px;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+  margin-left : 20px;
+}
+.hospital_list_card{
+  cursor: pointer;
+}
+
+.hospital_active h4{
+  color: red;
+  font-size: 18px;
+}
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+  .hospital_list{
+    margin-left: 0px;
+  }
+  .app__header{
+    flex-direction: column;
+    height: 100px;
+  }
+  .app__right{
+    margin-top: 40px;
+  }
+  .app_mid{
+    flex-direction: column;
+  }
+}
